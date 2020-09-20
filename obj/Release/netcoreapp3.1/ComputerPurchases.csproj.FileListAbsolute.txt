@@ -1,0 +1,16 @@
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.exe
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.deps.json
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.runtimeconfig.json
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.runtimeconfig.dev.json
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.dll
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ComputerPurchases.pdb
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\ConsoleTables.dll
+C:\Users\Andrei\source\repos\ComputerPurchases\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.csprojAssemblyReference.cache
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.AssemblyInfoInputs.cache
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.AssemblyInfo.cs
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.csproj.CopyComplete
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.dll
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.pdb
+C:\Users\Andrei\source\repos\ComputerPurchases\obj\Release\netcoreapp3.1\ComputerPurchases.genruntimeconfig.cache
