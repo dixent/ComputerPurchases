@@ -1,1 +1,1 @@
-[{"firm":"Apple","version":"Pro","price":2000.0,"year":2019},{"firm":"Dell","version":"Home","price":1200.0,"year":2020},{"firm":"Fly","version":"v2","price":1250.55,"year":2015},{"firm":"Fly","version":"v2","price":1250.55,"year":2015},{"firm":"Msi","version":"ps63","price":1500.0,"year":2019}]
+[{"firm":"Apple","version":"Pro","price":2000.0,"year":2019,"type":"laptop"},{"firm":"MyCustom","version":"1","price":1200.0,"year":2017,"type":"PC"}]

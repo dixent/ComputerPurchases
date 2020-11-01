@@ -1,34 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Text.Json;
-using System.IO;
-using Newtonsoft.Json;
 using ConsoleTables;
 using System.Linq;
-using System.ComponentModel;
+using ComputerPurchases.serializers;
 
 namespace ComputerPurchases
 {
     class ComputerManager
     {
         private List<Computer> computers;
-        private string computersFileName = Environment.CurrentDirectory + "../../../../data/computers.json";
+        private Serializer serializer;
+
+        private delegate void SaveAndShowComputers(object method, object[] args);
+        SaveAndShowComputers saveAndShowComputers;
         public ComputerManager()
         {
-            InitializeComputers();
-        }
+            serializer = new XmlSerializer("computers.xml");
 
-        private void InitializeComputers()
-        {
-            string json = File.ReadAllText(computersFileName);
-            computers = JsonConvert.DeserializeObject<List<Computer>>(json);
-        }
-
-        private void SaveComputers()
-        {
-            string json = JsonConvert.SerializeObject(computers);
-            File.WriteAllText(computersFileName, json);
+            computers = serializer.InitializeComputers();
         }
 
         public void ShowComputer(Computer computer)
@@ -48,7 +37,7 @@ namespace ComputerPurchases
             int index = 0;
             foreach (var computer in computers)
             {
-                table.AddRow(index, computer.firm, computer.version, computer.price, computer.year);
+                table.AddRow(index, computer.firm, computer.version, computer.price, computer.year, computer.type);
                 index += 1;
             }
             table.Write();
@@ -57,21 +46,21 @@ namespace ComputerPurchases
         public void AddComputer(Computer computer)
         {
             computers.Add(computer);
-            SaveComputers();
+            serializer.SaveComputers(computers);
             ShowComputers();
         }
 
         public void RemoveComputer(int index)
         {
             computers.RemoveAt(index);
-            SaveComputers();
+            serializer.SaveComputers(computers);
             ShowComputers();
         }
 
         public void UpdateComputer(int index, Computer computer)
         {
             computers[index] = computer;
-            SaveComputers();
+            serializer.SaveComputers(computers);
             ShowComputers();
         }
 
@@ -96,13 +85,13 @@ namespace ComputerPurchases
             var field = typeof(Computer).GetField(fieldName);
             var orderedComputers = computers.OrderBy(computer => field.GetValue(computer));
             Console.WriteLine(orderedComputers);
-           ShowComputers(orderedComputers.ToList<Computer>());
+            ShowComputers(orderedComputers.ToList<Computer>());
         }
 
 
         public ConsoleTable InitializeTable()
         {
-            return new ConsoleTable("Index", "Firm", "Version", "Price", "Year of issue");
+            return new ConsoleTable("Index", "Firm", "Version", "Price", "Year of issue", "Type");
         } 
 
     }

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Computers>
+  <Computer>
+    <firm>Apple</firm>
+    <version>1.2</version>
+    <price>1200</price>
+    <year>2017</year>
+    <type>1</type>
+  </Computer>
+  <Computer>
+    <firm>ApplePC</firm>
+    <version>2</version>
+    <price>1200</price>
+    <year>2018</year>
+    <type>1</type>
+  </Computer>
+  <Computer>
+    <firm>ApplePC</firm>
+    <version>2</version>
+    <price>1200</price>
+    <year>2018</year>
+    <type>0</type>
+  </Computer>
+  <Computer>
+    <firm>SamC</firm>
+    <version>2.3</version>
+    <price>1222</price>
+    <year>2020</year>
+    <type>1</type>
+  </Computer>
+  <Computer>
+    <firm>SamC</firm>
+    <version>2.3</version>
+    <price>4500</price>
+    <year>2021</year>
+    <type>1</type>
+  </Computer>
+</Computers>

@@ -6,7 +6,7 @@ namespace ComputerPurchases
     {
         static void Main(string[] args)
         {
-            new Commander().ListenCommands();
+            Commander.ListenCommands();
         }
     }
 }
